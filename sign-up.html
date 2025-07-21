@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - ShopHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin-top: 0;
+        }
+
+        .signup-section {
+            background: linear-gradient(to right, #6c757d, #343a40);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .signup-section h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .signup-form-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .signup-form-container input {
+            border-radius: 25px;
+            margin-bottom: 15px;
+            padding: 15px;
+            width: 100%;
+            border: 1px solid #ccc;
+        }
+
+        .signup-form-container button {
+            width: 100%;
+            background-color: #ff7f50;
+            color: white;
+            padding: 15px;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+            border: none;
+        }
+
+        .signup-form-container button:hover {
+            background-color: #ff6347;
+        }
+
+        .btn-google {
+            background-color: #db4437;
+            color: white;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            border-radius: 25px;
+            padding: 12px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-google img {
+            margin-right: 10px;
+        }
+
+        .btn-google:hover {
+            background-color: #c33b2f;
+        }
+
+        .signup-footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #343a40;
+        }
+
+        .signup-footer a {
+            color: #ff7f50;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .signup-footer a:hover {
+            color: #ff6347;
+        }
+
+        /* Separator Style */
+        .separator {
+            margin: 20px 0;
+            font-weight: 500;
+            color: #6c757d;
+            text-align: center;
+            position: relative;
+        }
+
+        .separator::before,
+        .separator::after {
+            content: "";
+            display: inline-block;
+            width: 40%;
+            height: 1px;
+            background-color: #ccc;
+            vertical-align: middle;
+            margin: 0 10px;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        .footer .social-icons a {
+            color: #ff7f50;
+            margin: 0 10px;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        .footer .social-icons a:hover {
+            color: #ff6347;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .signup-section h1 {
+                font-size: 2.5rem;
+            }
+
+            .signup-form-container {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Signup Section -->
+    <section class="signup-section">
+        <div class="container">
+            <h1 class="mb-4">Join ShopHub</h1>
+            <div class="signup-form-container">
+                <!-- Mock Google Sign-Up Button -->
+                <button class="btn-google">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" width="20" height="20" alt="Google Logo">
+                    Sign up with Google
+                </button>
+
+                <!-- Separator -->
+                <div class="separator">or</div>
+                
+                <form action="#" method="POST">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+
+                <div class="signup-footer">
+                    <p>Already have an account? <a href="login.html">Login here</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ShopHub. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
